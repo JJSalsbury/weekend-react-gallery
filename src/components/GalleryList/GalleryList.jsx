@@ -1,21 +1,21 @@
 //gallaryItems import
-// import StudentItem from '../StudentItem/StudentItem';
-import '../modules/galleryItems';
+import GalleryItem from '../GalleryItem/GalleryItem';
+// import '../modules/galleryItems';
 
 
 //Destructing creatureList OUT OF PROPS!! (see below)
-function GalleryList({gallaryItems}) {
-    console.log(gallaryItems);
+function GalleryList({galleryList}) {
+    console.log(galleryList);
     return (
-     <>
-      {gallaryItems.map(photoItem => 
+      <>
+      {galleryList.map(galleryItem => 
        (<GalleryItem
-       key={photoItem.id}
-       item={photoItem}
+       key={galleryItem.id}
+       galleryItem={galleryItem}
         />)
       )}
-    </>
+      </>
     );
 }
 
-export default StudentList;
+export default GalleryList;

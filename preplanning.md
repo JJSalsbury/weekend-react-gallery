@@ -15,11 +15,17 @@
 - no data base requirements.  
 - data stored in array (galleryItems) on server.  
 ​
-### Server/Router
+### Server/Router & ROUTE Considerations
+
 ​1. Server/Router 
 [x]  server/router provided.  
-[x]  server (gallery.data.js).  
-[x]  router (gallery.route.js).  
+[x]  server (gallery.data.js).
+    [] Express Routes:
+        [] /gallery (PROVIDED)
+[x]  router (gallery.route.js). 
+    [] PUT ROUTES:
+        [] /like/:id (PROVIDED)
+        [] /
 
 
 ### DOM
@@ -39,19 +45,23 @@ Build the gallery using multiple components. !!Remember JJ!!... its all Function
 ## Components:
 
 # App - represents the overall application or site.
-    [] import
-        [] React imports 
-            [] State  
-            [] Effect
-        [] axios
+    [ ] import
+        [ ] React imports 
+            [ ] State  
+            [ ] Effect
+        [ ] axios
+        [ ] hooks:
+            [ ] useState  
 
-        [] function App:
-            [] No form component necessary. Include in App.js as part of the function.
-            [] return considerations:
-                []
-                []
-                [] Route Considerations:   
-                    []
+    [] function App
+        [x] (No form component necessary. Include in App.js as part of the function.)
+        [] Create State Variables for user input
+        [] Create function handleSubmit
+        [] Return:
+            []
+            []
+            [] Axios:   
+                [ ] 
             
  
 # GalleryList - represents the gallery of images. We could reuse this component in different applications.  

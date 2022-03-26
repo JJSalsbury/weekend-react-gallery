@@ -13,3 +13,8 @@
   font-size: 1.5em;
 }
 
+.photo {
+  display: flexbox;
+  height: 250px;
+  width: 250px;
+}
