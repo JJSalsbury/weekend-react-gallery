@@ -14,7 +14,11 @@
 }
 
 .photo {
-  display: flex;
+  /* display: inline-block; */
+  /* box-sizing: border-box;
+  display: inline-flex;
+  margin: 1em;
+  padding: 1em; */
   height: 250px;
   width: 250px;
 }

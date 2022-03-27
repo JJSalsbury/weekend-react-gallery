@@ -14,16 +14,9 @@ function GalleryItem({galleryItem, addLike}) {
 
     const toggleShowHide = () => {
         console.log('Checked Description!');
-        // if (galleryItem.description === true) {
-        //     return 
-        // }
+
         setIsShowing(!isShowing);
         
-        // if(isShowing === false) {
-        //     console.log('false');
-        // } else if (isShowing === true) {
-        //     console.log('true');
-        // }
         };
        
         console.log(isShowing);
