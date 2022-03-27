@@ -24,13 +24,27 @@ const fetchImages = () => {
   //make a get request
   axios.get('/gallery').then(response => {
     //response has a lot
-    console.log(response.data);
+    console.log('Your galleryItems Array []', response.data);
     setGalleryList(response.data);
   }).catch(err => {
     // alert('error getting Gallery Item')
     console.log(err);
   });
 };
+
+const addLike = (galleryItem) => {
+    console.log('Update like');
+    axios.put(`/gallery/like/${galleryItem.id}`)
+        .then(response => {
+            //retrieves updated item list:
+            fetchImages();
+            console.log('Updated:', galleryItem.likes)
+        }).catch(err => {
+            console.log('Error in update', err);
+        })
+
+}
+
 
   //equivalent of document.ready()
   //will get called when component loads
@@ -50,6 +64,7 @@ const fetchImages = () => {
       <p>Gallery goes here</p>
       <GalleryList
       galleryList={galleryList}
+      addLike={addLike}
       />
     </div>
   );

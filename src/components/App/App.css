@@ -14,7 +14,7 @@
 }
 
 .photo {
-  display: flexbox;
+  display: flex;
   height: 250px;
   width: 250px;
 }

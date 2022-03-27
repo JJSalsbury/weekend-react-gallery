@@ -1,20 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-function GalleryItem({galleryItem}) {
-    console.log('clicked!')
+function GalleryItem({galleryItem, addLike}) {
+    // console.log('clicked!')
 
-    const [likes, setLikes] = useState(0);
+    const [likes, setLikes] = useState(false);
+
+    const handleLikes = () => {
+        console.log('Added like!');
+        addLike(galleryItem);
+    }
+
+    const handleToggle = () => {
+        console.log('Checked Discription!');
+        
+    }
 
     return(
         <>
-        <div id="photoId">
+        <div id="photoId" onClick={handleToggle}>
         <img key="galleryItem.id" className="photo" src={galleryItem.path}/>
         </div>
         <div id="btnId">
-        <button onClick={() => setLikes(likes +1) }>Click To Like!</button>
+        <button onClick={handleLikes}>Click To Like!</button>
         </div>
         <div id="likesCounterId">
-        <>{likes}</>
+        <>{galleryItem.likes} People Liked Your Photo</>
         </div>
         </>
     )
