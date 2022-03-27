@@ -11,11 +11,11 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
 
-//module import
 
 
 function App() {
 
+//created state variable and set it's value to an empty array. 
 const [galleryList, setGalleryList] = useState([]);
 
 // const [newImage, setNewImage] = useState('');
@@ -59,9 +59,9 @@ const addLike = (galleryItem) => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title"></h1>
+        <h1 className="App-title">My Photo Gallery<p id="subHeaderId">Tank - The World's Best Dog.&#128054;</p><p id="headerInstructionsId">Click on a photo to see a photo description. And don't forget to click like!</p></h1>
       </header>
-      <p>Gallery goes here</p>
+      <p id="quoteId">"A dog will teach you unconditional love. If you can have that in your life, things won't be too bad." <br></br>-Robert Wagner</p>
       <GalleryList
       className="App-gallery"
       galleryList={galleryList}

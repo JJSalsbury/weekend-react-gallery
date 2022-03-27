@@ -4,13 +4,38 @@
 
 .App-header {
   background-color: #222;
-  padding: 1em;
-  color: white;
-  margin-bottom: 1em;
+  margin-top: 5px;
+  color: tan;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+  opacity: 0.9;
+  /* margin-bottom: 1em; */
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#subHeaderId {
+  font-size: 25px;
+  color: beige;
+  font-style: oblique;
+  text-shadow: 2px 2px 6px;
+  font-weight: 100;
+
+}
+
+#headerInstructionsId {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 100;
+  padding-bottom: 20px;
+
 }
 
 .App-title {
-  font-size: 1.5em;
+  padding-top: 10px;
+  font-size: 40px;
+  /* text-shadow: 2px 2px 6px; */
+  font-weight: 800;
 }
 
 
@@ -19,21 +44,33 @@
 }
 
 .photo {
-  /* display: inline-block; */
-  /* box-sizing: border-box;
-  display: inline-flex;
-
-  padding: 1em; */
-
-  /* margin: 1em; */
   height: 250px;
   width: 250px;
 }
 
-#photoId {
+#photoDescriptionId {
   display: inline-block;
-  margin: ;
+  height: 250px;
+  width: 250px;
+  /* margin: ; */
   /* width: 50%; */
+}
+
+#quoteId{
+  display: flex;
+  padding-top: 23px;
+  color: beige;
+  font-family: fantasy;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+  background-color: #222;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 6px;
+  opacity: 0.9;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .layout {

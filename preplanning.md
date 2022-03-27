@@ -1,93 +1,81 @@
 **JJ's Project Preplanning:**
 
-# Weekend Project.
-# The Fullstack To-Do App. 
+# Weekend Project.  
+# The Fullstack To-Do App.  
 ​
-## To Do
+## To Do  
 ​
-[x] Power on laptop.   
-[x] Install npm libraries, as needed needed. 
-    [x] express, pg. 
-//[x] Create Pool.// (take out) 
+[x] Power on laptop.  
+[x] Install npm libraries, as needed needed.  
+    [x] express, pg.  
+//[x] Create Pool.// (take out)  
 ​
-### Database
+### Database  
 ​
-- no data base requirements.  
-- data stored in array (galleryItems) on server.  
+- no data base requirements.   
+- data stored in array (galleryItems) on server.    
 ​
-### Server/Router & ROUTE Considerations
+### Server/Router & ROUTE Considerations  
 
-​1. Server/Router 
-[x]  server/router provided.  
-[x]  server (gallery.data.js).
-    [] Express Routes:
-        [] /gallery (PROVIDED)
-[x]  router (gallery.route.js). 
-    [] PUT ROUTES:
-        [] /like/:id (PROVIDED)
-        [] /
-
-
+​1. Server/Router  
+[x]  server/router provided.   
+[x]  server (gallery.data.js). 
+    [x] Express Routes:  
+        [x] /gallery (PROVIDED)  
+[x]  router (gallery.route.js).   
+    [x] PUT ROUTES:  
+        [x] /like/:id (PROVIDED)  
+        
 ### DOM
-[x] create a gallery page to share pictures of things that are important to you 
+[x] create a gallery page to share pictures of things that are important to you.  
 
 ## Requirements:  
 
 [x] Create a button to "like" an image.  
 
-[x] Images don't need to be 100px x 100px, but it will be easier if the are all the same dimensions.   
+[x] Images don't need to be 100px x 100px, but it will be easier if the are all the same dimensions.     
 
 
-### Client (React)
+### Client (React)  
 
-Build the gallery using multiple components. !!Remember JJ!!... its all Functional Programming.
+Build the gallery using multiple components.   !!Remember!!... its all Functional Programming.  
 
-## Components:
+## Components:  
 
-# App - represents the overall application or site.
-    [ ] import
-        [ ] React imports 
-            [ ] State  
-            [ ] Effect
-        [ ] axios
-        [ ] hooks:
-            [ ] useState  
+# App - represents the overall application or site.  
+   [x] import.  
+    [x] React imports.  
+        [x] State hook.        
+        [x] Effect hook.      
+   [x] axios
+        [x] PUT request. Add data to server array.   
 
-    [] function App
-        [x] (No form component necessary. Include in App.js as part of the function.)
-        [] Create State Variables for user input
-        [] Create function handleSubmit
-        [] Return:
-            []
-            []
-            [] Axios:   
-                [ ] 
-            
- 
+   [x] function App  
+        [x] (No form component necessary. Include in App.js as part of the function.)  
+        [x] Create State Variables for user input.  
+        [x] Create function handleSubmit.  
+        [x] Return.  
+       
 # GalleryList - represents the gallery of images. We could reuse this component in different applications.  
 
-    [] import any required components.  
+[x] import any required components.  
 
-    [] function StudentList  
-        [] 
-        []
-        [] Route Considerations:    
-            []
+[x] function GalleryList  
+        [x] .map to loop, create each item.  
+        [x] addLike/galleryList props.  
 
-    [] export to any required component.  
+[x] export to any required component.  
 
 # GalleryItem - represents a single image in the gallery with the ability to click the image to toggle between image and description as well as the ability to like an image.  
 
-    [] import any required components.  
-
-    [] function StudentItem  
-        []  
-        []  
-        [] Route Considerations:    
-            []
-
-
-    [] export to any required components.
+[x] import any required components.  
+[x] import useState hook f/react.  
+[x] function handleLikes.  
+    [x] addLike(galleryItem).  
+    [x] toggle? show/hide description.  
+        [x] Return:   
+            [x] ternary to handle toggle.  
+    [x] export to any required components.  
 
 
         
