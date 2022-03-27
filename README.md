@@ -19,9 +19,6 @@ Passing data through props requires a bit of meticulousness. You must add them w
 Also, in react, the component parent child relationship was initially hard for me to conceive, but this work really helped solidify the relationship in regards to passing values.
 
 
-Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it? 
-
-
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
 ## Screen Shot
