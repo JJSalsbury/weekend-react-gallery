@@ -7,7 +7,7 @@ const galleryItems = [
     { id: 6, path: 'images/IMG_1232.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 },
     { id: 7, path: 'images/IMG_1771.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 },
     { id: 8, path: 'images/IMG_1951.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 },
-    { id: 9, path: 'images/IMG_4401.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 }
+    // { id: 9, path: 'images/IMG_4401.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 }
 ];
 
 module.exports = galleryItems;

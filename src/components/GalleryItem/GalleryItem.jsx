@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 function GalleryItem({galleryItem, addLike}) {
     // console.log('clicked!')
 
-    // const [likes, setLikes] = useState(0);
     const [isShowing, setIsShowing] = useState(false);
  
 
@@ -25,6 +24,7 @@ function GalleryItem({galleryItem, addLike}) {
 
     return(
         <>
+        <div className="layout">
         <div id="photoId" onClick={toggleShowHide}>
         {isShowing ? <p>{galleryItem.description}</p> : <img key="galleryItem.id" className="photo" src={galleryItem.path}/>}
         </div>
@@ -32,8 +32,8 @@ function GalleryItem({galleryItem, addLike}) {
         <button onClick={handleLikes}>Click To Like!</button>
         </div>
         <div id="likesCounterId">
-        <>{galleryItem.likes} People Liked Your Photo</>
-        {/* {setIsShowing()} */}
+        <>{galleryItem.likes} People Liked Your Photo! &#128054;</>
+        </div>
         </div>
         </>
     )

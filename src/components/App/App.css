@@ -13,12 +13,35 @@
   font-size: 1.5em;
 }
 
+
+.App-gallery {
+  display: inline-block;
+}
+
 .photo {
   /* display: inline-block; */
   /* box-sizing: border-box;
   display: inline-flex;
-  margin: 1em;
+
   padding: 1em; */
+
+  /* margin: 1em; */
   height: 250px;
   width: 250px;
+}
+
+#photoId {
+  display: inline-block;
+  margin: ;
+  /* width: 50%; */
+}
+
+.layout {
+  display: inline-block;
+  padding: 20px;
+  border-style: dashed;
+  border-color: brown;
+  margin: 20px;
+  background-color: whitesmoke;
+
 }
