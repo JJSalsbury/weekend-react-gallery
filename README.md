@@ -26,8 +26,7 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.he
 
 ## Screen Shot
 
-![alt text](http:/ScreenShot.png)
-
+![alt text](/ScreenShot.png?raw=true "Screenshot")
 
 ### Prerequisites
 
