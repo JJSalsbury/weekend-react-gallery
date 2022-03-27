@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 function GalleryItem({galleryItem, addLike}) {
     // console.log('clicked!')
 
-    const [likes, setLikes] = useState(false);
+    let [likes, setLikes] = useState(false);
 
     const handleLikes = () => {
         console.log('Added like!');
@@ -11,8 +11,8 @@ function GalleryItem({galleryItem, addLike}) {
     }
 
     const handleToggle = () => {
-        console.log('Checked Discription!');
-        
+        console.log('Checked Description!');
+
     }
 
     return(
