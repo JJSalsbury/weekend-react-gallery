@@ -37,9 +37,6 @@ Link to software that is required to install the app (e.g. node).
 
 ## Installation
 
-How do you get your application up and running? This is a step by step list for how another developer could get this project up and running. The good target audience in terms of knowledge, would be a fellow Primer from another cohort being able to spin up this project. Note that you do not need a paragraph here to intro Installation. It should be step-by-step.
-
-
 1. Open up code editor, run an `npm install`
 2. Running the server code requires nodemon. If you don't already have nodemon, install it globally with npm install nodemon --global.
 3. Run `npm run server` in your terminal.
