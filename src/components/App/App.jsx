@@ -1,16 +1,13 @@
-
+//Import react and app.css for use in App.jsx
 import React from 'react';
 import './App.css';
-
-// import galleryItems from '../gallery.data.js';
-// const galleryItems = require('./gallery.data.js');
 
 //Import useState/useEffect Hook
 import { useState, useEffect } from 'react';
 //Import Axios
 import axios from 'axios';
+//Import GalleryList for use in App.jsx
 import GalleryList from '../GalleryList/GalleryList';
-
 
 
 function App() {
@@ -18,10 +15,9 @@ function App() {
 //created state variable and set it's value to an empty array. 
 const [galleryList, setGalleryList] = useState([]);
 
-// const [newImage, setNewImage] = useState('');
-
+//Created fetchImages function to get images from the Gallery Items array, in the gallery.data.js.
 const fetchImages = () => {
-  //make a get request
+  //Axios GET request to /gallery
   axios.get('/gallery').then(response => {
     //response has a lot
     console.log('Your galleryItems Array []', response.data);
@@ -32,13 +28,16 @@ const fetchImages = () => {
   });
 };
 
+//Created addLike function to handle likes.
 const addLike = (galleryItem) => {
     console.log('Update like');
+    //Axios PUT request to http including galleryItem.id (See PUT route in gallery.router.js)
     axios.put(`/gallery/like/${galleryItem.id}`)
         .then(response => {
-            //retrieves updated item list:
+            //Retrieves updated item list:
             fetchImages();
-            console.log('Updated:', galleryItem.likes)
+            //Log'd to see count update in console.
+            console.log('Like Count:', galleryItem.likes)
         }).catch(err => {
             console.log('Error in update', err);
         })
@@ -47,15 +46,12 @@ const addLike = (galleryItem) => {
 
 
   //equivalent of document.ready()
-  //will get called when component loads
+  //fetchImages function will get called when component loads.
   useEffect(() => {
     fetchImages();
   }, []);
 
-  // const addImage = (event) => {
-  //   event.preventDefault();
-
-
+  //Should display to DOM on page load.
   return (
     <div className="App">
       <header className="App-header">

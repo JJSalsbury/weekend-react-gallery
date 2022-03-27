@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+//Gallery.data.js was given as a module. Made required for use in App.jsx.
 const galleryItems = require('../modules/gallery.data');
 
 // DO NOT MODIFY THIS FILE FOR BASE MODE
@@ -21,4 +22,5 @@ router.get('/', (req, res) => {
     res.send(galleryItems);
 }); // END GET Route
 
+//Module set to export, to be required in server.js.
 module.exports = router;

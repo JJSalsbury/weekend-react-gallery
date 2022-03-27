@@ -20,4 +20,5 @@ const galleryItems = [
     // { id: 9, path: 'images/IMG_4401.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 }
 ];
 
+//This was provided. Module will be set to required in the gallery.router.js
 module.exports = galleryItems;
